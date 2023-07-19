@@ -24,6 +24,7 @@
           <a href="./index.html" class="header-logo link"
             >Web<span class="logo">Studio</span></a
           >
+
           <ul class="header-link-list list">
             <li class="heder-menu">
               <a href="./index.html" class="header-link header-link-first link"
@@ -52,6 +53,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -128,13 +138,28 @@
           <h2 class="third-title">What are we doing</h2>
           <ul class="third-section-list list">
             <li class="third-list">
-              <img src="./images/img-1.jpg" width="360" alt="img" />
+              <img
+                srcset="./images/img-1@1x.jpg 1x, ./images/img-1@2x.jpg 2x"
+                src="./images/img-1@1x.jpg"
+                width="360"
+                alt="img"
+              />
             </li>
             <li class="third-list">
-              <img src="./images/img-2.jpg" width="360" alt="img" />
+              <img
+                srcset="./images/img-2@1x.jpg 1x, ./images/img-2@2x.jpg 2x"
+                src="./images/img-2@1x.jpg"
+                width="360"
+                alt="img"
+              />
             </li>
             <li class="third-list">
-              <img src="./images/img-3.jpg" width="360" alt="img" />
+              <img
+                srcset="./images/img-3@1x.jpg 1x, ./images/img-3@2x.jpg 2x"
+                src="./images/img-3@1x.jpg"
+                width="360"
+                alt="img"
+              />
             </li>
           </ul>
         </div>
@@ -145,7 +170,12 @@
           <h2 class="fourd-title">Our Team</h2>
           <ul class="fourd-section-list list">
             <li class="fourd-list">
-              <img src="./images/mark.jpg" width="264" alt="Mark" />
+              <img
+                srcset="./images/mark@1x.jpg 1x, ./images/mark@2x.jpg 2x"
+                src="./images/mark@1x.jpg"
+                width="264"
+                alt="Mark"
+              />
               <div class="card-content">
                 <h3 class="fourd-dop-title">Mark Guerrero</h3>
                 <p class="fourd-text">Product Designer</p>
@@ -198,7 +228,12 @@
               </div>
             </li>
             <li class="fourd-list">
-              <img src="./images/tom.jpg" width="264" alt="Tom" />
+              <img
+                srcset="./images/tom@1x.jpg 1x, ./images/tom@2x.jpg 2x"
+                src="./images/tom@1x.jpg"
+                width="264"
+                alt="Tom"
+              />
               <div class="card-content">
                 <h3 class="fourd-dop-title">Tom Ford</h3>
                 <p class="fourd-text">Frontend Developer</p>
@@ -251,7 +286,12 @@
               </div>
             </li>
             <li class="fourd-list">
-              <img src="./images/camila.jpg" width="264" alt="Camila" />
+              <img
+                srcset="./images/camila@1x.jpg 1x, ./images/camila@2x.jpg 2x"
+                src="./images/camila@1x.jpg"
+                width="264"
+                alt="Camila"
+              />
               <div class="card-content">
                 <h3 class="fourd-dop-title">Camila Garcia</h3>
                 <p class="fourd-text">Marketing</p>
@@ -305,7 +345,12 @@
               </div>
             </li>
             <li class="fourd-list">
-              <img src="./images/daniel.jpg" width="264" alt="Daniel" />
+              <img
+                srcset="./images/daniel@1x.jpg 1x, ./images/daniel@2x.jpg 2x"
+                src="./images/daniel@1x.jpg"
+                width="264"
+                alt="Daniel"
+              />
               <div class="card-content">
                 <h3 class="fourd-dop-title">Daniel Wilson</h3>
                 <p class="fourd-text">UI Designer</p>
@@ -478,6 +523,79 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle-close js-close-menu">
+        <svg class="mob-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="mobile-menu-link focus-modal link"
+            >Studio</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="mobile-menu-link link">Contacts</a>
+        </li>
+      </ul>
+      <address class="navigation-modal">
+        <ul class="address-link-modal list">
+          <li>
+            <a href="tel:+110001111111" class="address-modal-nomber link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="address-modal link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="modal-section-list list">
+        <li class="modal-list">
+          <a class="modal-link" href="" aria-label="Social media">
+            <svg class="modal-icon-mob" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-list">
+          <a class="modal-link" href="" aria-label="Social media">
+            <svg class="modal-icon-mob" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-list">
+          <a class="modal-link" href="" aria-label="Social media">
+            <svg class="modal-icon-mob" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-list">
+          <a class="modal-link" href="" aria-label="Social media">
+            <svg class="modal-icon-mob" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./mobile-menu.js"></script>
 
     <div data-modal class="modal is-hidden">
       <div class="conteiner-modal">
